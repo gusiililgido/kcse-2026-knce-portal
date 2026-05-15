@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>KCSE 2026 KNCE PORTAL</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+
+<!-- MENU -->
+<div class="menu">
+  <h2>📚 KCSE 2026 KNCE PORTAL</h2>
+
+  <button onclick="openAdmin()">ADMIN PANEL</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+<h1>KCSE 2026 KNCE PORTAL</h1>
+
+<p>
+ACCESS 2026 KCSE PREDICTIONS PAPERS,
+NOTES AND PAST PAPERS
+</p>
+
+<div class="countdown">
+<h2 id="timer"></h2>
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+<h2>KCSE 2026 PREDICTIONS</h2>
+<p>Ksh 50/=</p>
+
+<button onclick="payNow('KCSE Predictions')">
+PAY NOW
+</button>
+
+<button onclick="iPaid()">
+I HAVE PAID
+</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
+<h2>SETBOOK NOTES</h2>
+<p>Ksh 30/=</p>
+
+<button onclick="payNow('Setbook Notes')">
+PAY NOW
+</button>
+
+<button onclick="iPaid()">
+I HAVE PAID
+</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a">
+<h2>KCSE PAST PAPERS</h2>
+<p>Ksh 25/=</p>
+
+<button onclick="payNow('Past Papers')">
+PAY NOW
+</button>
+
+<button onclick="iPaid()">
+I HAVE PAID
+</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<h2>PER SUBJECT NOTES</h2>
+<p>Ksh 30/=</p>
+
+<button onclick="payNow('Subject Notes')">
+PAY NOW
+</button>
+
+<button onclick="iPaid()">
+I HAVE PAID
+</button>
+</div>
+
+</section>
+
+<!-- PAYMENT POPUP -->
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<h2>Payment Method</h2>
+
+<p>
+Complete payment through PesaPal STK Push
+</p>
+
+<input type="text" placeholder="Your Name" id="name">
+<input type="text" placeholder="Phone Number" id="phone">
+
+<button onclick="sendWhatsapp()">
+CONTINUE
+</button>
+
+<button onclick="closePopup()">
+CLOSE
+</button>
+
+</div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin" id="adminPanel">
+
+<div class="admin-box">
+
+<h2>ADMIN LOGIN</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="loginAdmin()">
+LOGIN
+</button>
+
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard" id="dashboard">
+
+<h1>ADMIN DASHBOARD</h1>
+
+<p>Pending Payments</p>
+
+<div class="pending">
+
+<div class="user">
+<h3>User Waiting Approval</h3>
+
+<p>Name: Example User</p>
+<p>Phone: 0700000000</p>
+
+<button onclick="approveUser()">
+APPROVE PAYMENT
+</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+<h2>Powered By Engineer Gido</h2>
+
+<a href="https://t.me/knec_director_examiners" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="70">
+</a>
+
+<p>Join us on Telegram</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
