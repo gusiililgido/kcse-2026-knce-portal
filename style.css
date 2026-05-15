@@ -1,0 +1,184 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+.menu{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#020617;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.menu button{
+background:red;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+}
+
+.countdown{
+margin-top:30px;
+font-size:25px;
+background:#1e293b;
+display:inline-block;
+padding:20px;
+border-radius:20px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+filter:blur(3px);
+}
+
+.card h2{
+margin-top:15px;
+}
+
+.card p{
+margin:10px 0;
+font-size:20px;
+color:#22c55e;
+}
+
+.card button{
+padding:12px 20px;
+border:none;
+margin:5px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.card button:first-of-type{
+background:#22c55e;
+color:white;
+}
+
+.card button:last-of-type{
+background:#f59e0b;
+color:white;
+}
+
+.popup,
+.admin,
+.dashboard{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+.popup-content,
+.admin-box{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+width:90%;
+max-width:400px;
+}
+
+.popup-content input,
+.admin-box input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+.popup-content button,
+.admin-box button{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+background:#22c55e;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.dashboard{
+overflow:auto;
+padding:30px;
+}
+
+.pending{
+margin-top:30px;
+}
+
+.user{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.user button{
+padding:10px 20px;
+background:#22c55e;
+border:none;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+background:#020617;
+}
