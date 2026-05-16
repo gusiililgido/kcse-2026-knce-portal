@@ -360,3 +360,12 @@ padding:10px 20px;
 border-radius:30px;
 font-size:14px;
 }
+
+button{
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
