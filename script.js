@@ -82,3 +82,39 @@ document.getElementById("timer").innerHTML =
 "KCSE Countdown: " + days + " Days Remaining";
 
 },1000);
+
+const buyers = [
+
+"Brian from Nairobi",
+"Mercy from Kisii",
+"Kevin from Mombasa",
+"Faith from Nakuru",
+"John from Eldoret",
+"Sharon from Kisumu",
+"Ian from Kericho"
+
+];
+
+const products = [
+
+"KCSE Predictions",
+"Setbook Notes",
+"Past Papers",
+"Subject Notes"
+
+];
+
+function showLiveSale(){
+
+let buyer =
+buyers[Math.floor(Math.random() * buyers.length)];
+
+let product =
+products[Math.floor(Math.random() * products.length)];
+
+document.getElementById("liveSale").innerHTML =
+"🔥 " + buyer + " just purchased " + product;
+
+}
+
+setInterval(showLiveSale,5000);
