@@ -1,3 +1,23 @@
+const firebaseConfig = {
+
+apiKey: "AIzaSyCG3JBcpFRyDq44IreJz49G2YNeGHUjC5I",
+
+authDomain: "kcse-2026-portal.firebaseapp.com",
+
+projectId: "kcse-2026-portal",
+
+storageBucket: "kcse-2026-portal.firebasestorage.app",
+
+messagingSenderId: "396115235814",
+
+appId: "1:396115235814:web:670d05659848d261d6bc27"
+
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+
 let selectedProduct = "";
 
 function payNow(product){
