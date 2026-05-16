@@ -85,13 +85,13 @@ document.getElementById("timer").innerHTML =
 
 const buyers = [
 
-"Brian from Nairobi",
-"Mercy from Kisii",
-"Kevin from Mombasa",
-"Faith from Nakuru",
-"John from Eldoret",
-"Sharon from Kisumu",
-"Ian from Kericho"
+"Brian",
+"Mercy",
+"Kevin",
+"Faith",
+"John",
+"Sharon",
+"Ian"
 
 ];
 
