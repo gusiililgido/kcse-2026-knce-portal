@@ -217,3 +217,19 @@ document.querySelector(".pending")
 .innerHTML = pendingHTML;
 
 });
+
+function approvePayment(id){
+
+db.collection("payments")
+.doc(id)
+.update({
+
+status:"approved"
+
+});
+
+alert(
+"✅ User Approved Successfully"
+);
+
+}
