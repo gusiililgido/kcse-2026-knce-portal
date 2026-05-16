@@ -35,19 +35,40 @@ alert("Waiting approval from admin...");
 
 function sendWhatsapp(){
 
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+db.collection("payments").add({
+
+name:name,
+phone:phone,
+product:selectedProduct,
+status:"pending",
+time:new Date()
+
+});
 
 let message =
 "Hello Engineer Gido%0A%0A" +
+
 "Name: " + name + "%0A" +
+
 "Phone: " + phone + "%0A" +
+
 "Purchased: " + selectedProduct + "%0A%0A" +
+
 "I have completed payment.";
 
 window.open(
 "https://wa.me/254704956915?text=" + message,
 "_blank"
+);
+
+alert(
+"✅ Payment Recorded Successfully"
 );
 
 }
