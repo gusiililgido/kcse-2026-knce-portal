@@ -237,3 +237,26 @@ alert(
 );
 
 }
+
+db.collection("payments")
+.onSnapshot((snapshot)=>{
+
+snapshot.forEach((doc)=>{
+
+let data = doc.data();
+
+if(data.status === "approved"){
+
+document.getElementById("downloadArea").innerHTML = `
+<h2>🎉 Your File is Ready</h2>
+
+<a href="${data.downloadLink}" target="_blank">
+<button>⬇ DOWNLOAD NOW</button>
+</a>
+`;
+
+}
+
+});
+
+});
