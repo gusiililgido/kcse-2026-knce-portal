@@ -56,7 +56,7 @@ alert("Wrong login details");
 function approveUser(){
 
 alert(
-"Payment Approved! Download link sent."
+"✅ Payment Approved Successfully"
 );
 
 window.open(
