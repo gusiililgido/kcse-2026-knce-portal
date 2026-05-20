@@ -118,3 +118,11 @@ document.getElementById("liveSale").innerHTML =
 }
 
 setInterval(showLiveSale,5000);
+
+function toggleMenu(){
+
+document
+.getElementById("menuLinks")
+.classList.toggle("show-menu");
+
+}
