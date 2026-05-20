@@ -158,46 +158,6 @@ document.getElementById("loader").style.display = "none";
 
 });
 
-db.collection("payments")
-.onSnapshot((snapshot)=>{
-
-let pendingHTML = "";
-
-snapshot.forEach((doc)=>{
-
-let data = doc.data();
-
-pendingHTML += `
-
-<div class="user">
-
-<h3>${data.name}</h3>
-
-<p>${data.phone}</p>
-
-<p>${data.product}</p>
-
-<p>Status: ${data.status}</p>
-
-<button onclick="
-approvePayment(
-'${doc.id}'
-)
-">
-APPROVE
-</button>
-
-</div>
-
-`;
-
-});
-
-document.querySelector(".pending")
-.innerHTML = pendingHTML;
-
-});
-
 function approvePayment(id){
 
 let link = prompt("Enter download link for this user:");
