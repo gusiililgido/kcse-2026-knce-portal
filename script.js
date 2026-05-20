@@ -158,26 +158,6 @@ document.getElementById("loader").style.display = "none";
 
 });
 
-function approvePayment(id){
-
-let link = prompt("Enter download link for this user:");
-
-db.collection("payments")
-.doc(id)
-.update({
-status:"approved",
-downloadLink: link
-});
-
-alert("✅ Approved + Download Link Sent");
-}
-
-alert(
-"✅ User Approved Successfully"
-);
-
-}
-
 db.collection("payments")
 .onSnapshot((snapshot)=>{
 
