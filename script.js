@@ -15,40 +15,19 @@ alert("Waiting approval from admin...");
 
 function sendWhatsapp(){
 
-let name =
-document.getElementById("name").value;
-
-let phone =
-document.getElementById("phone").value;
-
-db.collection("payments").add({
-
-name:name,
-phone:phone,
-product:selectedProduct,
-status:"pending",
-time:new Date()
-
-});
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
 
 let message =
 "Hello Engineer Gido%0A%0A" +
-
 "Name: " + name + "%0A" +
-
 "Phone: " + phone + "%0A" +
-
 "Purchased: " + selectedProduct + "%0A%0A" +
-
 "I have completed payment.";
 
 window.open(
 "https://wa.me/254704956915?text=" + message,
 "_blank"
-);
-
-alert(
-"✅ Payment Recorded Successfully"
 );
 
 }
@@ -77,7 +56,7 @@ alert("Wrong login details");
 function approveUser(){
 
 alert(
-"✅ Payment Approved Successfully"
+"Payment Approved! Download link sent."
 );
 
 window.open(
@@ -103,58 +82,3 @@ document.getElementById("timer").innerHTML =
 "KCSE Countdown: " + days + " Days Remaining";
 
 },1000);
-
-const buyers = [
-
-"Brian",
-"Mercy",
-"Kevin",
-"Faith",
-"John",
-"Sharon",
-"Ian"
-
-];
-
-const products = [
-
-"KCSE Predictions",
-"Setbook Notes",
-"Past Papers",
-"Subject Notes"
-
-];
-
-function showLiveSale(){
-
-let buyer =
-buyers[Math.floor(Math.random() * buyers.length)];
-
-let product =
-products[Math.floor(Math.random() * products.length)];
-
-document.getElementById("liveSale").innerHTML =
-"🔥 " + buyer + " just purchased " + product;
-
-}
-
-setInterval(showLiveSale,5000);
-
-function toggleMenu(){
-
-document
-.getElementById("menuLinks")
-.classList.toggle("show-menu");
-
-}
-
-window.addEventListener("load",function(){
-
-setTimeout(function(){
-
-document.getElementById("loader").style.display = "none";
-
-},2000);
-
-});
-
