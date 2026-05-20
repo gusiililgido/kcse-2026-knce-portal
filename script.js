@@ -15,15 +15,26 @@ alert("Waiting approval from admin...");
 
 function sendWhatsapp(){
 
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
 
 let message =
-"Hello Engineer Gido%0A%0A" +
-"Name: " + name + "%0A" +
-"Phone: " + phone + "%0A" +
-"Purchased: " + selectedProduct + "%0A%0A" +
-"I have completed payment.";
+"Hello ADMIN%0A%0A" +
+
+"🔥 PAYMENT CONFIRMATION%0A%0A" +
+
+"👤 Name: " + name + "%0A" +
+
+"📞 Phone: " + phone + "%0A" +
+
+"📚 Purchased: " + selectedProduct + "%0A%0A" +
+
+"✅ I have completed M-PESA payment.%0A" +
+
+"📸 Sending screenshot now.";
 
 window.open(
 "https://wa.me/254704956915?text=" + message,
