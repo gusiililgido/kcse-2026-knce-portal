@@ -377,3 +377,24 @@ transition:0.4s;
 .card:hover{
 transform:translateY(-10px) scale(1.03);
 }
+
+.mpesa-box{
+background:#0f172a;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+text-align:left;
+border:2px solid #22c55e;
+}
+
+.mpesa-box h3{
+color:#22c55e;
+margin-bottom:15px;
+text-align:center;
+}
+
+.mpesa-box p{
+margin:10px 0;
+font-size:15px;
+line-height:1.6;
+}
