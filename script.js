@@ -147,3 +147,17 @@ document.getElementById("loader").style.display = "none";
 },2000);
 
 });
+
+function openVIP(){
+
+document.getElementById("vipPopup")
+.style.display = "block";
+
+}
+
+function closeVIP(){
+
+document.getElementById("vipPopup")
+.style.display = "none";
+
+}
