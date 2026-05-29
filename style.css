@@ -500,3 +500,52 @@ margin-top:20px;
 color:#facc15;
 font-weight:bold;
 }
+
+.kjsea-section{
+padding:50px 20px;
+background:#111827;
+text-align:center;
+}
+
+.kjsea-section h1{
+font-size:35px;
+margin-bottom:15px;
+color:#facc15;
+}
+
+.kjsea-section p{
+margin-bottom:30px;
+}
+
+.kjsea-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.kjsea-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+transition:0.4s;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.kjsea-card:hover{
+transform:translateY(-10px);
+}
+
+.kjsea-card h2{
+margin-bottom:15px;
+color:#22c55e;
+}
+
+.kjsea-card button{
+background:#f59e0b;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
