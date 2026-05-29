@@ -577,3 +577,9 @@ transform:translateX(-100%);
 }
 
 }
+
+.announcement-text a{
+color:#facc15;
+text-decoration:none;
+font-weight:bold;
+}
