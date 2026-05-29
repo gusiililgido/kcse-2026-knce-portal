@@ -613,3 +613,14 @@ transform:translateY(-10px);
 color:#facc15;
 margin-bottom:10px;
 }
+
+.card button{
+background:linear-gradient(45deg,#22c55e,#16a34a);
+padding:12px 25px;
+border:none;
+border-radius:12px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+width:100%;
+}
