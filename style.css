@@ -22,12 +22,9 @@ z-index:999;
 }
 
 .menu button{
-background:red;
-border:none;
-padding:10px 20px;
-color:white;
-border-radius:10px;
-cursor:pointer;
+padding:10px 15px;
+font-size:14px;
+border-radius:12px;
 }
 
 .hero{
