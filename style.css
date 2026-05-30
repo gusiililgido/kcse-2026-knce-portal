@@ -697,3 +697,22 @@ margin:10px 0;
 font-size:14px;
 margin-right:8px;
 }
+
+.info-section{
+background:#0f172a;
+margin:25px;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.info-section h1{
+color:#facc15;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.info-section p{
+line-height:1.8;
+font-size:16px;
+}
