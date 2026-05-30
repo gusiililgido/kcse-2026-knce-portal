@@ -181,3 +181,16 @@ document
 .classList.toggle("show-menu");
 
 }
+
+document.querySelectorAll(".menu-links a")
+.forEach(link => {
+
+link.addEventListener("click", () => {
+
+document
+.getElementById("menuLinks")
+.classList.remove("show-menu");
+
+});
+
+});
