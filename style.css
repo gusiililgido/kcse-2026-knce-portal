@@ -45,12 +45,10 @@ color:#cbd5e1;
 }
 
 .countdown{
-margin-top:30px;
-font-size:25px;
-background:#1e293b;
-display:inline-block;
-padding:20px;
-border-radius:20px;
+padding:12px;
+font-size:18px;
+border-radius:12px;
+margin-top:15px;
 }
 
 .products{
