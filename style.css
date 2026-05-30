@@ -209,23 +209,36 @@ cursor:pointer;
 .menu-links{
 display:none;
 position:absolute;
-top:70px;
-left:20px;
+top:80px;
+left:10px;
 background:#1e293b;
-padding:20px;
+padding:15px;
 border-radius:15px;
-flex-direction:column;
-gap:15px;
+width:200px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+z-index:9999;
 }
 
 .menu-links a{
-color:white;
+display:block;
+padding:12px;
 text-decoration:none;
+color:white;
 font-weight:bold;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.menu-links a:last-child{
+border-bottom:none;
+}
+
+.menu-links a:hover{
+background:#334155;
+border-radius:8px;
 }
 
 .show-menu{
-display:flex;
+display:block;
 }
 
 .loader{
